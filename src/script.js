@@ -1,18 +1,22 @@
+var titles = "Jasmine";
+var num1 = "";
+var num2 = "";
+
 function helloWorld() {
   return "hello world";
 }
 
-var title = "practicar de jasmine"
-var valor1  =  ""
-var valor2  =  ""
-function titulo() {
-  document.write('<h1>'+title+'</h1>')
-  
+function title() {
+	document.write("<h2>" + titles + "</h2>" )
 };
-titulo();
-function suma(valor1,valor2) {
-	var suma = valor1+valor2
-};
+title();
 
+function sum(num1, num2) {
+	if(isNaN(num1)||isNaN(num2)) {
+		return null;
+	}else{
+		return parseInt(num1) + parseInt(num2);
+	};
+};
 
 
